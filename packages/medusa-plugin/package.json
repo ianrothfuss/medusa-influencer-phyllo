@@ -1,0 +1,47 @@
+{
+  "name": "medusa-plugin-phyllo-creator",
+  "version": "1.0.0",
+  "description": "Medusa plugin for managing influencers and content creators using Phyllo APIs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "medusa",
+    "plugin",
+    "phyllo",
+    "influencer",
+    "creator",
+    "social-media",
+    "ecommerce"
+  ],
+  "author": "Ian Rothfuss",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianrothfuss/medusa-influencer-phyllo.git",
+    "directory": "packages/medusa-plugin"
+  },
+  "peerDependencies": {
+    "@medusajs/framework": "^2.3.0",
+    "@medusajs/types": "^2.3.0",
+    "typeorm": "^0.3.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

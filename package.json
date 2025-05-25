@@ -1,0 +1,44 @@
+{
+  "name": "medusa-influencer-phyllo",
+  "version": "1.0.0",
+  "description": "Medusa plugin for influencer management using Phyllo APIs",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev": "npm run dev --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "eslint . --ext .ts,.tsx",
+    "clean": "npm run clean --workspaces",
+    "setup": "npm install && npm run build"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianrothfuss/medusa-influencer-phyllo.git"
+  },
+  "keywords": [
+    "medusa",
+    "phyllo",
+    "influencer",
+    "creator",
+    "ecommerce",
+    "plugin"
+  ],
+  "author": "Ian Rothfuss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ianrothfuss/medusa-influencer-phyllo/issues"
+  },
+  "homepage": "https://github.com/ianrothfuss/medusa-influencer-phyllo#readme"
+}
